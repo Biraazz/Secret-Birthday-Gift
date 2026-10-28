@@ -107,7 +107,7 @@ function submitBirthdayDate() {
   const retryBtn = document.getElementById('retry-btn');
 
   if (enteredDigits.length < 4) {
-    txt.textContent = "Please enter all 4 digits! ✨";
+    txt.textContent = "0719 ✨";
     card.classList.remove('shake');
     void card.offsetWidth;
     card.classList.add('shake');
@@ -115,7 +115,7 @@ function submitBirthdayDate() {
   }
 
   if (enteredDigits === TARGET_PASSCODE) {
-    // Correct Passcode (2005) - Directly transition to the Surprise Question Screen
+    // Correct Passcode (0719) - Directly transition to the Surprise Question Screen
     const danceGif = document.getElementById('dance-gif');
     if (danceGif) {
       danceGif.src = DANCE_GIF_URL;
@@ -186,7 +186,7 @@ function resetQuiz() {
   const retryBtn = document.getElementById('retry-btn');
 
   img.src = SHINCHAN_GIFS.ask;
-  txt.textContent = "Enter the 4-digit secret passcode 💖";
+  txt.textContent = "0719 💖";
   keypad.classList.remove('hidden-btn');
   retryBtn.classList.add('hidden-btn');
 }
@@ -467,19 +467,19 @@ function closeGiftModal() {
 const LETTER_SECTIONS = [
   {
     id: 'letter-headline-el',
-    text: "Happy birthday to my favourite\nperson! ❤️"
+    text: "Happy birthday Sanuu❤️\nMy favourite person! ❤️"
   },
   {
     id: 'letter-p1-el',
-    text: "I hope this year brings you everything you've been wishing for and so much more. Thank you for making my days happier, my bad days easier, and my life a little more beautiful just by being in it. 🥺💖"
+    text: "I hope your birthday brings you endless happiness, beautiful smiles, and everything your heart wishes for. You have a special way of making ordinary moments feel a little more beautiful. 🥹💖"
   },
   {
     id: 'letter-p2-el',
-    text: "I'm so lucky to have you, and I can't wait to make a million more memories with you. Here's to you, your dreams, and all the happiness you deserve."
+    text: "I hope you always keep that beautiful smile on your face and never stop chasing your dreams. You deserve so many wonderful things in life, and I hope this little surprise makes your day extra special."
   },
   {
     id: 'letter-closing-el',
-    text: "Happy birthday, my love. I love you more than you know. 🫶🏻🎂❤️"
+    text: "Once again, Happy Birthday, Sanuu! Stay happy, stay adorable, and keep smiling. You deserve all the love and happiness in the world"
   }
 ];
 
